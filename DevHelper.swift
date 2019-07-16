@@ -9,7 +9,7 @@
 import Foundation
 
 class DevHelper {
-    class func log(filename: String, infoDic: [String: Any]) {
+    class func log(filename: String, infoDic: [String: Any], needTime: Bool = false) {
         let count = filename.count
         var endStr: String {
             var i = 1
@@ -21,7 +21,12 @@ class DevHelper {
             return str
         }
         
-        print("\n<\(filename)>\n")
+        print("\n<\(filename)>")
+        if needTime {
+            print("\t\(Date())\n")
+        } else {
+            print("")
+        }
         for info in infoDic {
             print("\t🔹\(info.key)")
             print("\t\t\(info.value)\n")
