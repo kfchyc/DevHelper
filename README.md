@@ -12,7 +12,7 @@ This is a attribute where you use this functions to show you where the informati
 This is a attribute for informations you want to output to console.
 
 ### e.g.
-`
+```
 DevHelper.log(
     filename: "AAATableViewController", 
     infoDic: [
@@ -20,4 +20,4 @@ DevHelper.log(
         "Time": Date()
     ]
 )
-`
+```
